@@ -43,7 +43,7 @@ func main() {
 			to := searchRe.ReplaceAllString(from, replaceReStr)
 			if from != to {
 				// fmt.Printf("%v -> %v\n", from, to)
-				err := os.Rename(from, tp)
+				err := os.Rename(from, to)
 				if err != nil {
 					log.Fatal(err)
 				}
